@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+           
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="..//venders/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="..//venders/css/grid.css">
+        <!-- <link rel="stylesheet" type="text/css" href="venders/css/ionicons.min.css"> -->
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="..//venders/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="..//resources/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>Shop</title>
+    </head>
+	<BODY>
+        <header>
+                <nav>
+                    <div class="row">
+                            <a><img src="..//resources/img/logo.png" alt="93 logo" class="logo" href="#"></a>
+                            <ul class="main-nav">
+                                <li><a href="..//index.php">Home</a></li>
+                                <li><a href="Sell.html">Sell</a></li>
+        
+                            </ul>
+                    </div>
+                </nav>
+                <div class="search-box">
+                        <form name ="myForm" class="example" action="Search.php" method="POST" onsubmit="return validateForm()">
+                        <input class="search" type="text" placeholder="Year" name="year">
+                        <input class="search" type="text" placeholder="Maunufacture" name="manu">
+                        <input class="search" type="text" placeholder="Model" name="model">
+                        <button class="searchBTN" type="submit">Search</button>
+                        <!-- <i class="icon ion-md-search"></i> -->
+                        </form>
+                </div> 
+            </header>
+            <script>
+                function validateForm() {
+                    var x = document.forms["myForm"]["year"].value;
+                    var y = document.forms["myForm"]["manu"].value;
+                    var z = document.forms["myForm"]["model"].value;
+                     if (x == "" && y == "" && z == "") {
+                        alert("Please fill at least one column!");
+                        return false;
+                    }
+                }
+            </script>
+            
+                <section class="Vtype">
+                    <!-- <div>
+                        <h5><span style="color: #e67e22; margin-top:50px">Shop by Type</span></h5>
+                    </div> -->
+                    
+        
+                    <div class="row">
+                        <form action="Shop.php" type="GET">
+                            <div class="col span-1-of-3 box">
+                                <a href="Shop.php?type=Sedans"><img class="CarIcon" src="..//resources/img/sedans.jpg" id="Sedans"></a>
+
+                                
+                            </div>
+        
+                            <div class="col span-1-of-3 box">
+                                <a href="Shop.php?type=Convertible"><img class="CarIcon" src="..//resources/img/convertible.jpg" id="convertible"></a>
+
+                            </div>
+
+                            <div class="col span-1-of-3 box">
+                                <a href="Shop.php?type=Luxury"><img class="CarIcon" src="..//resources/img/Luxury.png" id="Luxury"></a>
+
+                            </div>
+            
+                    </div>
+
+                    
+                    <div class="row">
+                        <div class="col span-1-of-3 box">
+                            <a href="Shop.php?type=Sport"><img class="CarIcon" src="..//resources/img/sport.png" id="sport"></a>
+
+                            
+                        </div>
+    
+                        <div class="col span-1-of-3 box">
+                            <a href="Shop.php?type=SUV"><img class="CarIcon" src="..//resources/img/SUV.png" id="SUV"></a>
+
+                        </div>
+                        <div class="col span-1-of-3 box">
+                            <a href="Shop.php?type=Truck"><img class="CarIcon" src="..//resources/img/PickupTruck.png" id="Truck"></a>
+
+                        </div>
+
+
+                    </div> 
+                    </form>
+           
+        
+                    <div class="row2">
+                            <div class="col span-1-of-3 box">
+    
+                                
+                            </div>
+        
+                            <div class="col span-1-of-3 box">
+    
+                            </div>
+                            <div class="col span-1-of-3 box">
+    
+                            </div>
+    
+    
+                        </div> 
+        
+                </section>
+       
+                <footer>
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <ul class="footer-nav">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">iOS App</a></li>
+                                <li><a href="#">Android App</a></li>
+                            </ul>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <ul class="social-links">
+                                <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon ion-logo-googleplus"></i></a></li>
+                                <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+               
+                </footer>
+      
+    </body>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+</html>

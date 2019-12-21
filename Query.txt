@@ -1,0 +1,2 @@
+1.
+CREATE VIEW Display AS SELECT i.V_ID AS "V_ID", i.Type AS "Type", i.Manufacture AS "Maunufacture", i.Year AS "Year", i.Series AS "Series", i.Model AS "Model", r.Price AS "Price", r.Miles AS "Miles" FROM CarInfo i, CarRecord r where i.V_ID = r.V_ID ORDER BY i.V_ID ASC
